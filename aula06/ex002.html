@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa em JavaScript</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: aqua;
+        }
+
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px;
+            text-align: center;
+            color: red;
+            border: 1px solid green;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        p{
+            text-indent: 10px;
+            align-items: justify;
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(99, 99, 65);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>
+
+    <p>Já me livrei da maldição.</p>
+
+    <script>
+        const nome = window.prompt('Qual é o seu nome?')
+
+        window.alert('É um grande prazer te conhecer, ' + nome + '!')
+    </script>
+</body>
+</html>

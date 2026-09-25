@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Strings</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            border-color: blue;
+            background-color: aqua;
+            border-radius: 10px;
+            border: 2px solid black;
+            font-size: 2em;
+            text-align: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatação de Strings</h1>
+
+    <script>
+        const nome = window.prompt('Qual é o seu nome?')
+
+        document.writeln(`Olá <strong>${nome}</strong>, o seu nome tem: ${nome.length} letras.<br>`)
+
+        document.writeln(`Seu nome em letras maiúculas: ${nome.toUpperCase()}<br>`)
+
+        document.writeln(`Seu nome em letras maiúsculas: ${nome.toLowerCase()}<br>`)
+    </script>
+</body>
+</html>
