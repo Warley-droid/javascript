@@ -21,16 +21,24 @@
 
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
 
-    <div>Clique em mim!</div>
+    <div class="msg">Clique em mim!</div>
 
     <script>
-        var corpo = window.document.getElementsByTagName('body')[0]
+        var corpo = window.document.body
 
-        document.write(corpo.style.background = 'black')
+        corpo.style.background = 'black'
         
-        var p1 = window.document.getElementsByTagName('p')[0]
+        var p1 = window.document.getElementsByTagName('p')[1]
 
         document.write(`O texto escrito é: ${p1.innerHTML}`)
+
+        p1.style.color = 'blue'
+
+        var d = window.document.querySelectorAll('div.msg')[0]
+
+        d.style.color = 'green'
+        d.style.background = 'lightgray'
+        d.innerText = 'Estou aguardando...'
     </script>
 </body>
 </html>
