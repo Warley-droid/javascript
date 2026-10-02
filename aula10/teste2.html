@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Conversor de Dólar</h1>
+
+    <input placeholder="Valor em Reais" type="number" name="num" id="num">
+
+    <button onclick="converter()">Converter</button>
+</body>
+
+<script>
+    const valorReal = window.document.querySelector('input#num')
+
+    function converter(){
+        const valorConvertido = valorReal.value / 5.5
+
+        window.alert(`O valor convertido é de${valorConvertido.toFixed(2).replace('.', ',')} dólares.`)
+    }
+</script>
+</html>

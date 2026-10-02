@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+
+    <input type="number" name="ntxt1" id="ntxt1"> + 
+
+    <input type="number" name="ntxt2" id="ntxt2">
+
+    <input type="button" name="env1" id="env1" value="Enviar">
+
+    <div id="resultado1">Resultado:</div>
+
+    <script>
+
+        const ntxt1 = window.document.querySelector('input#ntxt1')
+
+        const ntxt2 = window.document.querySelector('input#ntxt2')
+
+        const env1 = window.document.querySelector('input#env1')
+
+        const rst1 = window.document.querySelector('div#resultado1')
+
+        // Início eventos para o (env1)
+        env1.addEventListener ('click', enviar)
+        // Final eventos para o (env1)
+
+        // Início Function para o (env1)
+        function enviar(){
+            const n1 = Number(ntxt1.value)
+            const n2 = Number(ntxt2.value)
+
+            const s = n1 + n2
+            
+            rst1.innerHTML = `Resultado: ${s}`
+        } // Final Function para o (env1)
+        
+    </script>
+</body>
+</html>
