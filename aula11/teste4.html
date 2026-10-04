@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 04</title>
+</head>
+<body>
+    <input type="text" id="cpais" name="cpais" placeholder="Onde você nasceu?">
+
+    <input type="button" value="Enviar" id="env1" name="env1">
+
+    <div id="res1"></div>
+
+    <script>
+    const cpais = window.document.querySelector('input#cpais')
+
+    const env1 = window.document.querySelector('input#env1')
+
+    const res1 = window.document.querySelector('div#res1')
+
+    env1.addEventListener('click', enviar)
+
+    function enviar(){
+        res1.innerHTML = `<p>Você nasceu em: <strong>${cpais.value}</strong></p>`
+
+        if (cpais.value == 'Brasil'){
+            res1.innerHTML += (`Você é <strong>brasileiro</strong>!`)
+        }else{
+            res1.innerHTML += (`Você é <strong>estrangeiro</strong>!`)
+        }
+    }
+</script>
+</body>
+</html>
