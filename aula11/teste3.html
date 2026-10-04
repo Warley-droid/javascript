@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 03</title>
+</head>
+<body>
+    <input type="number" id="txn1" name="txn1" placeholder="KM/H">
+    
+    <input type="button" id="env1" name="env1" value="Enviar">
+</body>
+    <script>
+        const txn1 = window.document.querySelector('input#txn1')
+
+        const env1 = window.document.querySelector('input#env1')
+
+        env1.addEventListener('click', clicar)
+
+        function clicar(){
+            const n1 = Number(txn1.value)
+
+            if (n1 > 80){
+                window.document.write(`Você está acima de 80km/h, portanto será multado!`)
+            }else{
+                window.document.write(`Você está por dentro da velocidade permitida que é 80km/h, portanto não será multado. Continue assim!`)
+            }
+        }
+    </script>
+</html>
