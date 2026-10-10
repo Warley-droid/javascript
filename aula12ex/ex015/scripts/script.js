@@ -20,12 +20,16 @@ function verificar() {
 
             if (idade < 10) {
                 foto.src = 'imagens/homem-crianca (1).jpg'
+                res.innerHTML = `Detectamos um homem com ${idade} anos de idade`
             } else if (idade < 21) {
                 foto.src = 'imagens/homem-jovem (1).jpg'
+                res.innerHTML = `Detectamos um homem com ${idade} anos de idade`
             } else if (idade < 50) {
                 foto.src = 'imagens/homem-adulto (1).jpg'
+                res.innerHTML = `Detectamos um homem com ${idade} anos de idade`
             } else {
                 foto.src = 'imagens/homem-idoso (1).jpg'
+                res.innerHTML = `Detectamos um homem com ${idade} anos de idade`
             }
 
         } else if (fsex[1].checked) {
@@ -33,15 +37,17 @@ function verificar() {
 
             if (idade < 10) {
                 foto.src = 'imagens/mulher-crianca (1).jpg'
+                res.innerHTML = `Detectamos uma mulher com ${idade} anos de idade`
             } else if (idade < 21) {
                 foto.src = 'imagens/mulher-jovem (1).jpg'
+                res.innerHTML = `Detectamos uma mulher com ${idade} anos de idade`
             } else if (idade < 50) {
                 foto.src = 'imagens/mulher-adulta (1).jpg'
+                res.innerHTML = `Detectamos uma mulher com ${idade} anos de idade`
             } else {
                 foto.src = 'imagens/mulher-idosa (1).jpg'
+                res.innerHTML = `Detectamos uma mulher com ${idade} anos de idade`
             }
         }
-
-        res.innerHTML = `Detectamos um(a) ${genero} com ${idade} anos de idade`
     }
 }
